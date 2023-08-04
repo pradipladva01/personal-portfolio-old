@@ -7,6 +7,19 @@
   --primary-color: #1DB954;
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.shadow_box * {
+  z-index: 2;
+  position: relative;
+}
+
 html {
   overflow-x: hidden !important;
 }
@@ -59,13 +72,10 @@ body {
 .theme_btn::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.01));
   background: linear-gradient(120deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.01));
   z-index: -1;
   border-radius: 14px;

@@ -1,19 +1,17 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import '../styles/Loading.css'
 
 const Loading = () => {
-  useEffect(() => {
-    const preloaderElement = document.getElementById('preloader');
-    preloaderElement.classList.add('off');
-    return () => {
-      preloaderElement.classList.remove('off');
-    };
-  }, []);
-
   return (
-    <div id="preloader" className="preloader off">
-      <div className="black_wall"></div>
-      <div className="loader"></div>
+    <div id="preloader" className="preloader">
+      <div className="spinner">
+        <div className="box box_1">
+          <div className="circle circle_1"></div>
+        </div>
+        <div className="box box_2">
+          <div className="circle circle_2"></div>
+        </div>
+      </div>
     </div>
   )
 }

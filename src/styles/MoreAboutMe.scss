@@ -43,6 +43,11 @@
     }
 }
 
+.shadow_box * {
+    z-index: 2;
+    position: relative;
+}
+
 .about_area {
     padding-top: 80px;
 
@@ -94,6 +99,7 @@
                 align-items: center;
                 gap: 5px;
                 justify-content: center;
+                margin-bottom: 10px;
             }
 
             .about_details_inner {
@@ -169,12 +175,18 @@
                     font-weight: 400;
                     margin: 0;
                 }
-                + li{
+
+                +li {
                     margin-top: 32px;
                 }
             }
         }
     }
+
+    .info_box {
+        height: 100%;
+    }
+
     .inner_profile_icons_2 {
         gap: 20px !important;
     }
@@ -193,6 +205,15 @@
 
     .about_area .about_me_wrap .about_details .section_heading img {
         width: 25px;
+    }
+
+    .about_area .inner_profile_icons a {
+        width: 72px;
+        height: 72px;
+    }
+    .about_area .about_contact_box h1{
+        font-size: 36px;
+        line-height: 50xz;
     }
 }
 
@@ -213,6 +234,11 @@
     .about_area .about_me_wrap .about_details .section_heading {
         margin-bottom: 40px;
     }
+
+    .about_area .about_contact_box h1 {
+        font-size: 32px;
+        line-height: 42px;
+    }
 }
 
 @media (max-width:585px) {
@@ -231,7 +257,15 @@
     .about_area .about_me_wrap .about_details .about_details_inner {
         padding: 80px 30px 30px;
     }
-    .about_area .about_edc_exp ul li h2{
+
+    .about_area .about_edc_exp ul li h2 {
         line-height: 24px;
+    }
+}
+@media (max-width:360px) {
+    .about_area .about_me_wrap .about_details .section_heading {
+        font-size: 22px;
+        justify-content: center;
+        margin-bottom: 30px;
     }
 }

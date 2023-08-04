@@ -19,10 +19,10 @@ const Footer = () => {
                             <NavLink to="/about">About</NavLink>
                         </li>
                         <li className='menu_item'>
-                            <NavLink to="/">Works</NavLink>
+                            <NavLink to="/works">Works</NavLink>
                         </li>
                         <li className='menu_item'>
-                            <NavLink to="/">Contact</NavLink>
+                            <NavLink to="/contact">Contact</NavLink>
                         </li>
                     </ul>
                     <p className="copyright">

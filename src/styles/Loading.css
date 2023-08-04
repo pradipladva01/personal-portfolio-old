@@ -7,34 +7,42 @@
   }
 }
 .preloader {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #111;
-  transform-origin: bottom;
-  z-index: 111111;
-}
-.preloader .black_wall {
-  height: 100%;
-  background-color: #222;
-  transform-origin: top;
-  animation: preloader_slide 0.5s ease-in-out 0s 1 normal both;
-}
-.preloader .loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 3px;
-  position: absolute;
-  border-radius: 2px;
-  top: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  background-color: var(--primary_color);
-  transform-origin: left;
-  animation: loader_running 3s ease-in-out 1s infinite normal both;
+  height: 100vh;
 }
-.preloader.off {
-  animation: preloader_slide 0.5s ease-in-out 0s 1 reverse both;
+.preloader .spinner {
+  width: 8%;
+  height: 8%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  animation: rotate 1s ease infinite;
+}
+.preloader .spinner .box {
+  position: relative;
+}
+.preloader .spinner .box .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+.preloader .spinner .box .circle_1 {
+  background: #FFFFFF;
+  animation: circle--1 ease 1200ms infinite;
+}
+.preloader .spinner .box .circle_2 {
+  background: #FFFFFF;
+  animation: circle--2 ease 1200ms infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=Loading.css.map */

@@ -8,7 +8,7 @@
 }
 
 .footer_area {
-  padding-top: 128px;
+  padding-top: 100px;
   padding-bottom: 78px;
 }
 .footer_area .footer_logo {
@@ -44,4 +44,10 @@
 }
 .footer_area .copyright span {
   color: var(--primary-color);
+}
+
+@media (max-width: 428px) {
+  .footer_area .footer_menu {
+    gap: 20px;
+  }
 }/*# sourceMappingURL=Footer.css.map */

@@ -5,6 +5,11 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 // import Loading from './components/Loading'
 import MoreAboutMe from './pages/MoreAboutMe'
+import Credentials from './pages/Credentials'
+import Works from './pages/Works'
+import Contact from './pages/Contact'
+import Service from './pages/Service'
+import Loading from './components/Loading'
 
 const Home = lazy(() => retry(() => import('./pages/Home')))
 const FourOhFour = lazy(() => retry(() => import('./pages/FourOhFour')))
@@ -27,6 +32,26 @@ const Routes = () => {
         {
             path: '/about',
             element: <MoreAboutMe />
+        },
+        {
+            path: '/credentials',
+            element: <Credentials />
+        },
+        {
+            path: '/works',
+            element: <Works />
+        },
+        {
+            path: '/contact',
+            element: <Contact />
+        },
+        {
+            path: '/service',
+            element: <Service />
+        },
+        {
+            path: '/loading',
+            element: <Loading />
         },
         {
             path: '*',

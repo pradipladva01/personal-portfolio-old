@@ -4,6 +4,7 @@ import Logo from '../resources/images/PradipL.svg'
 import { NavLink } from 'react-router-dom'
 import '../styles/Navbar.css'
 
+
 const Navbar = () => {
     const [isMenuActive, setIsMenuActive] = useState(false);
 
@@ -34,13 +35,13 @@ const Navbar = () => {
                                     <NavLink to="/contact">Contact</NavLink>
                                 </li>
                             </ul>
-                            <NavLink to="" className="theme_btn">
+                            <NavLink to="/contact" className="theme_btn">
                                 <img src={textureImg} alt="" className='bg_img' />
                                 Let's talk
                             </NavLink>
                         </nav>
 
-                        <NavLink to="" className="theme_btn">
+                        <NavLink to="/contact" className="theme_btn">
                             <img src={textureImg} alt="" className='bg_img' />
                             Let's talk
                         </NavLink>
