@@ -56,7 +56,7 @@
 }
 .header_area .show_menu span {
   width: 100%;
-  height: 1px;
+  height: 2px;
   background: #fff;
   display: block;
   transition: 0.4s;
@@ -68,7 +68,7 @@
   transform: translate3d(0px, 6px, 0px) scale(1, 1) rotate(45deg) scale(1, 1);
 }
 .header_area .show_menu.active span:last-child {
-  transform: translate3d(4px, -2px, 0px) scale(1, 1) rotate(-45deg) scale(1, 1);
+  transform: translate3d(4px, -1px, 0px) scale(1, 1) rotate(-45deg) scale(1, 1);
 }
 .header_area .show_menu.active span:nth-child(2) {
   transform: scale(0);

@@ -7,6 +7,20 @@
   --primary-color: #1DB954;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  color: var(--body-color);
+  background: var(--white-color);
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
 *,
 *::before,
 *::after {

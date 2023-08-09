@@ -10,6 +10,7 @@ import Works from './pages/Works'
 import Contact from './pages/Contact'
 import Service from './pages/Service'
 import Loading from './components/Loading'
+import Cursor from './components/Cursor'
 
 const Home = lazy(() => retry(() => import('./pages/Home')))
 const FourOhFour = lazy(() => retry(() => import('./pages/FourOhFour')))
@@ -52,6 +53,10 @@ const Routes = () => {
         {
             path: '/loading',
             element: <Loading />
+        },
+        {
+            path: '/cursor',
+            element: <Cursor />
         },
         {
             path: '*',

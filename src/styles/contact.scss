@@ -100,9 +100,11 @@
                         margin-bottom: 7px;
                     }
 
+                    a,
                     h4 {
+                        text-decoration: none;
                         color: #ffffff;
-                        font-size: 12px;
+                        font-size: 14px;
                         opacity: 0.8;
                         font-weight: 500;
                         margin-bottom: 7px;
@@ -305,9 +307,13 @@
     .contact_area .contact_infos .contact_details li .icon_box img {
         width: 20px;
     }
+
     .contact_area .contact_form .shadow_box .star_icon {
         position: absolute;
         top: 0;
         right: 20px;
+    }
+    .contact_area .contact_infos .contact_details li .right a, .contact_area .contact_infos .contact_details li .right h4{
+        font-size: 12px;
     }
 }

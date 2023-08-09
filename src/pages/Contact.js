@@ -37,7 +37,7 @@ const Contact = () => {
                                     </div>
                                     <div className="right">
                                         <span>MAIL us</span>
-                                        <h4>pradipladva02@gmail.com</h4>
+                                        <Link to="mailto:pradipladva02@gmail.com">pradipladva02@gmail.com</Link>
                                     </div>
                                 </li>
                                 <li className='d-flex align-items-center' data-aos="zoom-in">
@@ -46,7 +46,7 @@ const Contact = () => {
                                     </div>
                                     <div className="right">
                                         <span>Contact Us</span>
-                                        <h4>+91 8980108806</h4>
+                                        <Link to="tel: 8980108806">+91 8980108806</Link>
                                     </div>
                                 </li>
                                 <li className='d-flex align-items-center' data-aos="zoom-in">
