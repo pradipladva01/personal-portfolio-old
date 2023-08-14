@@ -94,6 +94,7 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: 1;
 }
 .project_area .project_item .project_img {
   border-radius: 30px;
