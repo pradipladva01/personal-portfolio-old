@@ -1,19 +1,13 @@
-:root {
-    --body-color: #0F0F0F;
-    --dark-black-color: #323232;
-    --white-color: #FFFFFF;
-    --text-color: #BCBCBC;
-    --text-main-color: #676767;
-    --primary-color: #1DB954;
-}
-
-
 .header_area {
     margin-top: 10px;
 
     .logo {
         display: inline-block;
         z-index: 16;
+        font-size: 24px;
+        color: var(--white-color);
+        font-weight: 600;
+        text-decoration: none;
     }
 
     .navbar {
@@ -94,6 +88,12 @@
             }
         }
 
+    }
+}
+
+@media (max-width:991px) {
+    .header_area .logo {
+        font-size: 20px;
     }
 }
 

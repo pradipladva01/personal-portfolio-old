@@ -9,7 +9,8 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <Link to="/" className="footer_logo">
-            <img src={Logo} alt="" />
+          Pradip Ladva
+            {/* <img src={Logo} alt="" /> */}
           </Link>
           <ul className="footer_menu">
             <li className="menu_item">

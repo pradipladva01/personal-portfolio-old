@@ -1,19 +1,14 @@
 import React, { lazy } from 'react'
 import { useRoutes } from 'react-router-dom'
 import { retry } from './utils/CommonFunctions'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-// import Loading from './components/Loading'
-import MoreAboutMe from './pages/MoreAboutMe'
-import Credentials from './pages/Credentials'
-import Works from './pages/Works'
-import Contact from './pages/Contact'
-import Service from './pages/Service'
-import Loading from './components/Loading'
-import Cursor from './components/Cursor'
-import WorkDetails from './pages/WorkDetails'
 
 const Home = lazy(() => retry(() => import('./pages/Home')))
+const MoreAboutMe = lazy(() => retry(() => import('./pages/MoreAboutMe')))
+const Credentials = lazy(() => retry(() => import('./pages/Credentials')))
+const Works = lazy(() => retry(() => import('./pages/Works')))
+const Contact = lazy(() => retry(() => import('./pages/Contact')))
+const Service = lazy(() => retry(() => import('./pages/Service')))
+const WorkDetails = lazy(() => retry(() => import('./pages/WorkDetails')))
 const FourOhFour = lazy(() => retry(() => import('./pages/FourOhFour')))
 const Routes = () => {
 
@@ -22,14 +17,6 @@ const Routes = () => {
         {
             path: '/',
             element: <Home />
-        },
-        {
-            path: '/navbar',
-            element: <Navbar />
-        },
-        {
-            path: '/footer',
-            element: <Footer />
         },
         {
             path: '/about',
@@ -50,14 +37,6 @@ const Routes = () => {
         {
             path: '/service',
             element: <Service />
-        },
-        {
-            path: '/loading',
-            element: <Loading />
-        },
-        {
-            path: '/cursor',
-            element: <Cursor />
         },
         {
             path: '/work-details',

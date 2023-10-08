@@ -12,13 +12,14 @@
 }
 
 ::-moz-selection {
-  color: var(--body-color);
-  background: var(--white-color);
+  -moz-user-select: none;
+       user-select: none;
 }
 
 ::selection {
-  color: var(--body-color);
-  background: var(--white-color);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 img {

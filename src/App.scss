@@ -12,8 +12,7 @@
 }
 
 ::selection {
-  color: var(--body-color);
-  background: var(--white-color);
+  user-select: none;
 }
 
 img {

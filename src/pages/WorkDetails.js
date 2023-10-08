@@ -11,11 +11,15 @@ import Project6 from "../resources/images/project6.jpeg";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../styles/WorkDetails.css";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 const WorkDetails = () => {
   return (
     <>
+      <Helmet>
+        <title>Work Detail | Personal Portfolio</title>
+      </Helmet>
       <Navbar />
       <section className="breadcrumb_area">
         <div className="container">
@@ -103,8 +107,11 @@ const WorkDetails = () => {
             </div>
           </div>
         </div>
-        <div className="container d-flex align-items-center justify-content-center" data-aos="zoom-in">
-          <Link to="#" class="big_btn shadow_box">
+        <div
+          className="container d-flex align-items-center justify-content-center"
+          data-aos="zoom-in"
+        >
+          <Link to="#" className="big_btn shadow_box">
             Next Project
           </Link>
         </div>
