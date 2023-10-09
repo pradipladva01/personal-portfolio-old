@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
-import * as yup from "yup";
-import { useFormik } from "formik";
+import React, { useEffect, useState } from "react";
+// import * as yup from "yup";
+// import { useFormik } from "formik";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Call from "../resources/images/phone.svg";
@@ -13,34 +13,41 @@ import Footer from "../components/Footer";
 import "../styles/contact.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-
-// import { useForm } from "react-hook-form";
-// import emailjs from "emailjs-com";
-
-const initialValues = {
-  name: "",
-  email: "",
-  subject: "",
-  message: "",
-};
-const validationSchema = yup.object({
-  name: yup.string().required("Name Required!"),
-  email: yup
-    .string()
-    .email("Enter a valid email")
-    .required("Email is Required!"),
-  subject: yup.string().required("Subject is Required!"),
-  message: yup.string().required("Message is Required!"),
-});
+import useWeb3Forms from "@web3forms/react";
+import { useForm } from "react-hook-form";
 
 const Contact = () => {
-  const formik = useFormik({
-    initialValues,
-    validationSchema,
-    onSubmit: async (values) => {
-      console.log("Form Submited", values);
-    }
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitSuccessful, isSubmitting },
+  } = useForm({
+    mode: "onTouched",
   });
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [message, setMessage] = useState(false);
+
+  const apiKey = "8761a2b9-98e5-4aec-a04a-dc24b786ada4";
+  const { submit: onSubmit } = useWeb3Forms({
+    access_key: apiKey,
+    settings: {
+      from_name: "Pradip Ladva",
+      subject: "New Contact Message from your pradip ladva",
+    },
+    onSuccess: (msg, data) => {
+      setIsSuccess(true);
+      setMessage(msg);
+      reset();
+    },
+    onError: (msg, data) => {
+      setIsSuccess(false);
+      setMessage(msg);
+    },
+  });
+  setTimeout(() => {
+    setIsSuccess(false);
+  }, 1000);
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
@@ -195,20 +202,26 @@ const Contact = () => {
                 <h1>
                   Let’s work <span>together.</span>
                 </h1>
-                <form action="" noValidate onSubmit={formik.handleSubmit}>
+                <form
+                  noValidate
+                  onSubmit={handleSubmit(onSubmit)}
+                  method="POST"
+                >
                   <div className="input-group">
                     <input
                       type="text"
                       name="name"
                       id="name"
                       placeholder="Name *"
-                      value={formik.values.name}
-                      onChange={formik.handleChange}
+                      {...register("name", {
+                        required: "Full name is required",
+                        maxLength: 80,
+                      })}
                     />
-                    {formik.touched.name && Boolean(formik.errors.name) && (
-                      <p className="error">
-                        {formik.touched.name && formik.errors.name}
-                      </p>
+                    {errors.name && (
+                      <div className="mt-1 error">
+                        <small>{errors.name.message}</small>
+                      </div>
                     )}
                   </div>
                   <div className="input-group">
@@ -217,13 +230,25 @@ const Contact = () => {
                       name="email"
                       id="email"
                       placeholder="Email *"
-                      value={formik.values.email}
-                      onChange={formik.handleChange}
+                      // value={formik.values.email}
+                      // onChange={formik.handleChange}
+                      {...register("email", {
+                        required: "Enter your email",
+                        pattern: {
+                          value: /^\S+@\S+$/i,
+                          message: "Please enter a valid email",
+                        },
+                      })}
                     />
-                    {formik.touched.email && Boolean(formik.errors.email) && (
+                    {/* {formik.touched.email && Boolean(formik.errors.email) && (
                       <p className="error">
                         {formik.touched.email && formik.errors.email}
                       </p>
+                    )} */}
+                    {errors.email && (
+                      <div className="mt-1 error">
+                        <small>{errors.email.message}</small>
+                      </div>
                     )}
                   </div>
                   <div className="input-group">
@@ -232,15 +257,15 @@ const Contact = () => {
                       name="subject"
                       id="subject"
                       placeholder="Your Subject *"
-                      value={formik.values.subject}
-                      onChange={formik.handleChange}
+                      {...register("subject", {
+                        required: "subject is required",
+                      })}
                     />
-                    {formik.touched.subject &&
-                      Boolean(formik.errors.subject) && (
-                        <p className="error">
-                          {formik.touched.subject && formik.errors.subject}
-                        </p>
-                      )}
+                    {errors.subject && (
+                      <div className="mt-1 error">
+                        <small>{errors.subject.message}</small>
+                      </div>
+                    )}
                   </div>
                   <div className="input-group">
                     <textarea
@@ -248,21 +273,30 @@ const Contact = () => {
                       name="message"
                       id="message"
                       placeholder="Your Message *"
-                      value={formik.values.message}
-                      onChange={formik.handleChange}
+                      {...register("message", {
+                        required: "Enter your Message",
+                      })}
                     />
-                    {formik.touched.message &&
-                      Boolean(formik.errors.message) && (
-                        <p className="error">
-                          {formik.touched.message && formik.errors.message}
-                        </p>
-                      )}
+                    {errors.message && (
+                      <div className="mt-1 error">
+                        <small>{errors.message.message}</small>
+                      </div>
+                    )}
                   </div>
                   <div className="input-group">
-                    <button className="theme_btn submit-btn" type="submit">
-                      Send Message
+                    <button type="submit" className="theme_btn submit_btn">
+                      {isSubmitting ? (
+                        <div className="spinner-border" role="status"></div>
+                      ) : (
+                        "Submit"
+                      )}
                     </button>
                   </div>
+                  {isSubmitSuccessful && isSuccess && (
+                    <div className="success_mail">
+                      {message || "Success. Message sent successfully"}
+                    </div>
+                  )}
                 </form>
               </div>
             </div>
