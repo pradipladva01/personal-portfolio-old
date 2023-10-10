@@ -40,7 +40,7 @@ const Navbar = () => {
               </NavLink>
             </nav>
 
-            <NavLink to="/contact" className="theme_btn">
+            <NavLink to="tel: +91 8980108806" className="theme_btn" >
               <img src={textureImg} alt="" className="bg_img" />
               Let's talk
             </NavLink>
