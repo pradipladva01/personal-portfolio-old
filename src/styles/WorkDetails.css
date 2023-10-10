@@ -120,6 +120,7 @@
   font-size: 16px;
   line-height: 1.56;
   margin-bottom: 20px;
+  font-weight: 400;
 }
 .project_details_wrap .project_infos_wrap .project_details_info p:last-child {
   margin: 0;
