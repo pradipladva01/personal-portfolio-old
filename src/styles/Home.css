@@ -433,4 +433,18 @@
     padding: 40px 22px;
     height: 100%;
   }
+}
+@media (max-width: 360px) {
+  .about_area .inner_profile_icons a {
+    width: 60px;
+    height: 60px;
+  }
+  .about_area .inner_profile_icons {
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  .about_area .inner_profile_icons a svg {
+    width: 30px;
+    height: 30px;
+  }
 }/*# sourceMappingURL=Home.css.map */

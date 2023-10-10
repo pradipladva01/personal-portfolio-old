@@ -1,6 +1,6 @@
 import React from 'react'
 import textureImg from '../resources/images/background_texture.png'
-import Pradip from '../resources/images/pradip.jpg'
+import Pradip from '../resources/images/pradip.png'
 import nextIcon from '../resources/images/Next_icon.svg'
 import starIcon from '../resources/images/star1.svg'
 import '../styles/Home.css'
