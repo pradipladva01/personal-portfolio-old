@@ -7,6 +7,7 @@ import "./App.css";
 import ScrollToTop from "./components/ScrollToTop";
 import Loading from "./components/Loading";
 // import Cursor from "./components/Cursor";
+import { Analytics } from "@vercel/analytics/react";
 import Router from "./Routes";
 import { SnackbarProvider } from "notistack";
 
@@ -23,6 +24,7 @@ const App = () => {
           <Router />
         </Suspense>
       </SnackbarProvider>
+      <Analytics />
     </>
   );
 };
