@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import useWeb3Forms from "@web3forms/react";
 import { useForm } from "react-hook-form";
+import { enqueueSnackbar } from "notistack";
 
 const Contact = () => {
   const {
@@ -292,11 +293,14 @@ const Contact = () => {
                       )}
                     </button>
                   </div>
-                  {isSubmitSuccessful && isSuccess && (
-                    <div className="success_mail">
-                      {message || "Success. Message sent successfully"}
-                    </div>
-                  )}
+                  {isSubmitSuccessful &&
+                    isSuccess &&
+                    enqueueSnackbar(
+                      message || "Success. Message sent successfully",
+                      {
+                        variant: "success", // You can choose 'success', 'error', 'warning', or 'info' here
+                      }
+                    )}
                 </form>
               </div>
             </div>

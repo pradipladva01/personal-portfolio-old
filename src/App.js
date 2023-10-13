@@ -8,6 +8,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Loading from "./components/Loading";
 // import Cursor from "./components/Cursor";
 import Router from "./Routes";
+import { SnackbarProvider } from "notistack";
 
 const App = () => {
   useEffect(() => {
@@ -16,10 +17,12 @@ const App = () => {
   return (
     <>
       <ScrollToTop />
-      <Suspense fallback={<Loading />}>
-        {/* <Cursor /> */}
-        <Router />
-      </Suspense>
+      <SnackbarProvider maxSnack={3}>
+        <Suspense fallback={<Loading />}>
+          {/* <Cursor /> */}
+          <Router />
+        </Suspense>
+      </SnackbarProvider>
     </>
   );
 };

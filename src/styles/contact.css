@@ -222,6 +222,14 @@
 .success_mail {
   text-align: center;
   margin-top: 20px;
+  position: absolute;
+  background: white;
+  width: 60%;
+  padding: 15px;
+  color: black;
+  border-radius: 10px;
+  bottom: 20px;
+  right: 20px;
 }
 
 .spinner-border {
