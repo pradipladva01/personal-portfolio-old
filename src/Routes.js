@@ -2,6 +2,7 @@ import React, { lazy } from "react";
 import { Navigate, useRoutes } from "react-router-dom";
 import { retry } from "./utils/CommonFunctions";
 
+import Loading from './components/Loading';
 const Home = lazy(() => retry(() => import("./pages/Home")));
 const MoreAboutMe = lazy(() => retry(() => import("./pages/MoreAboutMe")));
 const Credentials = lazy(() => retry(() => import("./pages/Credentials")));
@@ -11,6 +12,7 @@ const Service = lazy(() => retry(() => import("./pages/Service")));
 const WorkDetails = lazy(() => retry(() => import("./pages/WorkDetails")));
 const FourOhFour = lazy(() => retry(() => import("./pages/FourOhFour")));
 const Routes = () => {
+
   const routes = useRoutes([
     {
       path: "/",
@@ -46,7 +48,7 @@ const Routes = () => {
     },
     {
       path: "/404",
-      element: <FourOhFour />,
+      element: <Loading />,
     },
   ]);
   return routes;

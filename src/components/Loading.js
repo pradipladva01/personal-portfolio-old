@@ -1,5 +1,5 @@
 import React from 'react'
-import pradipLadva from "../resources/images/Pradip-Ladva.svg"
+import pradipLadva from "../resources/images/PradipLogo.svg"
 import '../styles/Loading.css'
 
 const Loading = () => {

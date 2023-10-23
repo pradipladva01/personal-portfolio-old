@@ -10,6 +10,9 @@
   font-weight: 600;
   text-decoration: none;
 }
+.footer_area .footer_logo img {
+  width: 200px;
+}
 .footer_area .footer_menu {
   margin: 33px 0 37px 0;
   padding: 0;
@@ -45,6 +48,11 @@
 @media (max-width: 991px) {
   .footer_area .logo {
     font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .footer_area .footer_logo img {
+    width: 150px;
   }
 }
 @media (max-width: 428px) {

@@ -48,7 +48,7 @@ const Contact = () => {
   });
   setTimeout(() => {
     setIsSuccess(false);
-  }, 1000);
+  }, 50000);
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
@@ -298,7 +298,7 @@ const Contact = () => {
                     enqueueSnackbar(
                       message || "Success. Message sent successfully",
                       {
-                        variant: "success", // You can choose 'success', 'error', 'warning', or 'info' here
+                        variant: "success",
                       }
                     )}
                 </form>

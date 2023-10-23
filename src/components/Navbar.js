@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import textureImg from "../resources/images/background_texture.png";
-import Logo from "../resources/images/PradipL.svg";
+import Logo from "../resources/images/PradipLogo.svg";
 import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
 
@@ -16,8 +16,8 @@ const Navbar = () => {
         <div className="container">
           <div className="gx-row d-flex align-items-center justify-content-between">
             <NavLink to="/" className="logo">
-            Pradip Ladva
-              {/* <img src={Logo} alt="Logo" /> */}
+              {/* Pradip Ladva */}
+              <img src={Logo} alt="Logo" />
             </NavLink>
             <nav className={`navbar ${isMenuActive ? "active" : ""}`}>
               <ul className="menu">
@@ -40,7 +40,7 @@ const Navbar = () => {
               </NavLink>
             </nav>
 
-            <NavLink to="tel:+918980108806" className="theme_btn" >
+            <NavLink to="tel:+918980108806" className="theme_btn">
               <img src={textureImg} alt="" className="bg_img" />
               Let's talk
             </NavLink>

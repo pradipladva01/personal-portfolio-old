@@ -5,9 +5,14 @@ import { Link } from "react-router-dom";
 const FourOhFour = () => {
   return (
     <>
-      <section className="fourohfour_section">
-       
-      </section>
+      <div class="container">
+        <h1>404</h1>
+        <p>Oops! The page you're looking for has flown into space.</p>
+        <img src="astronaut.png" alt="Astronaut" id="astronaut" />
+        <p>
+          But don't worry, you can <a href="/">return to Earth</a>.
+        </p>
+      </div>
     </>
   );
 };

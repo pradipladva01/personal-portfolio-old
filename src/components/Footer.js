@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../resources/images/PradipL.svg";
+import Logo from "../resources/images/PradipLogo.svg";
 import { Link, NavLink } from "react-router-dom";
 import "../styles/Footer.css";
 
@@ -9,8 +9,8 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <Link to="/" className="footer_logo">
-          Pradip Ladva
-            {/* <img src={Logo} alt="" /> */}
+          {/* Pradip Ladva */}
+            <img src={Logo} alt="" />
           </Link>
           <ul className="footer_menu">
             <li className="menu_item">

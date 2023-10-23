@@ -9,6 +9,9 @@
   font-weight: 600;
   text-decoration: none;
 }
+.header_area .logo img {
+  width: 200px;
+}
 .header_area .navbar {
   margin: 0;
   padding: 0;
@@ -122,5 +125,10 @@
   }
   .header_area .gx-row .theme_btn {
     display: none;
+  }
+}
+@media (max-width: 480px) {
+  .header_area .logo img {
+    width: 150px;
   }
 }/*# sourceMappingURL=Navbar.css.map */

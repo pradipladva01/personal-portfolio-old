@@ -14,11 +14,11 @@
   height: 100vh;
 }
 .preloader img {
-  width: 40%;
+  width: 30%;
 }
 
 @media (max-width: 480px) {
   .preloader img {
-    width: 80%;
+    width: 60%;
   }
 }/*# sourceMappingURL=Loading.css.map */

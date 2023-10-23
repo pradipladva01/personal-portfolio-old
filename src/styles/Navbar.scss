@@ -8,6 +8,9 @@
         color: var(--white-color);
         font-weight: 600;
         text-decoration: none;
+        img{
+            width: 200px;
+        }
     }
 
     .navbar {
@@ -157,5 +160,10 @@
                 display: none;
             }
         }
+    }
+}
+@media (max-width:480px) {
+    .header_area .logo img{
+        width: 150px;
     }
 }
