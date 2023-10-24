@@ -48,7 +48,7 @@ const Routes = () => {
     },
     {
       path: "/404",
-      element: <Loading />,
+      element: <FourOhFour />,
     },
   ]);
   return routes;

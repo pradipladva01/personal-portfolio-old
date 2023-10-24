@@ -399,15 +399,45 @@
 
 }
 
-h1 {
-    font-size: 80px;
-    margin: 0;
-    color: #e74c3c;
-}
+.fourohfour_section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
 
-p {
-    font-size: 18px;
-    color: #333;
+
+    h1 {
+        font-size: 150px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        color: black;
+        margin: 0;
+        margin-bottom: -40px;
+        text-shadow:
+            2px 2px #fff, -2px 2px #fff, 2px -2px #fff, -2px -2px #fff, 2px 2px 5px #555;
+
+        span {
+            transform: rotate(270deg);
+            display: inline-block;
+        }
+    }
+
+    h6 {
+        font-size: 160px;
+        margin: 0;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    a {}
 }
 
 #astronaut {
@@ -418,9 +448,12 @@ p {
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-20px);
     }
@@ -497,6 +530,16 @@ a:hover {
     .about_area .info_box .pradip_sign {
         width: auto;
     }
+    .fourohfour_section h1{
+        font-size: 100px;
+        margin-bottom: -20px;
+    }
+    .fourohfour_section h6{
+        font-size: 100px;
+    }
+    .fourohfour_section p{
+        font-size: 18px;
+    }
 }
 
 @media (max-width:585px) {
@@ -523,6 +566,16 @@ a:hover {
     .about_area .about_contact_box h1 {
         font-size: 30px;
         line-height: 1.2;
+    }
+    .fourohfour_section h1{
+        font-size: 70px;
+        margin-bottom: 0px;
+    }
+    .fourohfour_section h6{
+        font-size: 70px;
+    }
+    .fourohfour_section p{
+        font-size: 16px;
     }
 }
 
@@ -551,6 +604,19 @@ a:hover {
         padding: 40px 22px;
         height: 100%;
     }
+    .fourohfour_section h1{
+        font-size: 50px;
+        font-weight: 600;
+        margin-bottom: 0px;
+        letter-spacing: 2px;
+    }
+    .fourohfour_section h6{
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .fourohfour_section p{
+        font-size: 14px;
+    }
 }
 
 @media (max-width:360px) {
@@ -568,4 +634,18 @@ a:hover {
         width: 30px;
         height: 30px;
     }
+    .fourohfour_section h1{
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 0px;
+        letter-spacing: 2px;
+    }
+    .fourohfour_section h6{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .fourohfour_section p{
+        font-size: 12px;
+    }
+
 }
