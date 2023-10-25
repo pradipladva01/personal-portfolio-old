@@ -141,6 +141,31 @@
         }
     }
 
+    .live_link {
+        margin: 50px 0;
+
+        a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            overflow: hidden;
+            justify-content: center;
+            
+            img {
+                transition: transform .4s cubic-bezier(.215,.61,.355,1);
+                transform: translate(-10px, 20px);
+            }
+            &:hover{
+                img{
+                    transition: transform .4s cubic-bezier(.215,.61,.355,1);
+                    transform: translate(0);
+                }
+            }
+        }
+    }
+
     .project_details_2_img {
         height: 400px;
         border-radius: 30px;

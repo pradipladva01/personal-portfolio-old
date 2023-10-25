@@ -1,4 +1,5 @@
 import React from "react";
+import linkArrow from "../resources/images/link-arrow.svg";
 import Star from "../resources/images/star-2.png";
 import StarIcon from "../resources/images/star-icon.png";
 import textureImg from "../resources/images/background_texture.png";
@@ -78,6 +79,12 @@ const WorkDetails = () => {
                 </p>
               </div>
             </div>
+          </div>
+          <div className="live_link">
+            <Link>
+              Live Demo - Click to Watch
+              <img src={linkArrow} alt="" />
+            </Link>
           </div>
           <div className="project_details_2_img mb-30" data-aos="zoom-in">
             <img src={Project2} alt="project2" />
