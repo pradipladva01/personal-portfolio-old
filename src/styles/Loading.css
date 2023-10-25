@@ -14,7 +14,7 @@
   height: 100vh;
 }
 .preloader img {
-  width: 30%;
+  width: 300px;
 }
 
 @media (max-width: 480px) {
