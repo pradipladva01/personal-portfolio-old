@@ -1,7 +1,7 @@
 import React from 'react'
 import textureImg from '../resources/images/background_texture.png'
 import Star from '../resources/images/star-2.png'
-import project1 from '../resources/images/project1.jpeg'
+import project1 from '../resources/images/project2.jpeg'
 import nextIcon from '../resources/images/Next_icon.svg'
 import Navbar from '../components/Navbar'
 import "../styles/Works.css"

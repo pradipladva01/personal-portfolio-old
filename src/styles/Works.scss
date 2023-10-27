@@ -5,7 +5,7 @@
 .shadow_box * {
     z-index: 2;
     position: relative;
-  }
+}
 
 .shadow_box {
     position: relative;
@@ -101,6 +101,8 @@
             img {
                 width: 100%;
                 display: block;
+                height: 280px;
+                object-fit: cover;
             }
         }
 
@@ -210,8 +212,9 @@
         font-size: 26px;
     }
 }
+
 @media (max-width:360px) {
-    .project_area .container > .section_heading {
+    .project_area .container>.section_heading {
         font-size: 22px;
     }
 }

@@ -97,6 +97,9 @@
 .project_area .project_item .project_img img {
   width: 100%;
   display: block;
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .project_area .project_item .project_img_2 {
   height: 360px;
