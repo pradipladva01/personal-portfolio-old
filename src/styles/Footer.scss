@@ -10,7 +10,7 @@
         font-weight: 600;
         text-decoration: none;
         img{
-            width: 200px;
+            width: 110px;
         }
     }
 
@@ -55,11 +55,6 @@
 @media (max-width:991px) {
     .footer_area .logo {
         font-size: 20px;
-    }
-}
-@media (max-width:480px) {
-    .footer_area .footer_logo img{
-        width: 150px;
     }
 }
 @media (max-width:428px) {
