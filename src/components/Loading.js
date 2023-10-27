@@ -1,11 +1,11 @@
 import React from "react";
-import pradipLadva from "../resources/images/PradipLogo.svg";
+import PradipLoader from "../resources/images/PradipLoader.svg";
 import "../styles/Loading.css";
 
 const Loading = () => {
   return (
     <div className="preloader">
-      <img src={pradipLadva} alt="pradipLadva" />
+      <img src={PradipLoader} alt="pradipLadva" />
     </div>
   );
 };
