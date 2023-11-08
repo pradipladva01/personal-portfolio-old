@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import * as yup from "yup";
-// import { useFormik } from "formik";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Call from "../resources/images/phone.svg";
@@ -13,9 +11,10 @@ import Footer from "../components/Footer";
 import "../styles/contact.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import useWeb3Forms from "@web3forms/react";
 import { useForm } from "react-hook-form";
-import { enqueueSnackbar } from "notistack";
 
 const Contact = () => {
   const {
@@ -40,15 +39,16 @@ const Contact = () => {
       setIsSuccess(true);
       setMessage(msg);
       reset();
+      // Show a success toast
+      toast.success(message || "Message sent successfully");
     },
     onError: (msg, data) => {
       setIsSuccess(false);
       setMessage(msg);
+      // Show an error toast
+      toast.error(msg);
     },
   });
-  setTimeout(() => {
-    setIsSuccess(false);
-  }, 50000);
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
@@ -293,20 +293,15 @@ const Contact = () => {
                       )}
                     </button>
                   </div>
-                  {isSubmitSuccessful &&
-                    isSuccess &&
-                    enqueueSnackbar(
-                      message || "Success. Message sent successfully",
-                      {
-                        variant: "success",
-                      }
-                    )}
                 </form>
               </div>
             </div>
           </div>
         </div>
       </section>
+      {isSubmitSuccessful && isSuccess && (
+        <ToastContainer position="bottom-left" autoClose={3000} />
+      )}
       <Footer />
     </>
   );

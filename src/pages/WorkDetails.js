@@ -13,9 +13,17 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../styles/WorkDetails.css";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import WorkData from "../resources/data/WorkData";
 
 const WorkDetails = () => {
+  const { id } = useParams();
+
+  const selectedWork = WorkData.find((work) => work.id === parseInt(id));
+
+  if (!selectedWork) {
+    return <div>Work not found.</div>;
+  }
   return (
     <>
       <Helmet>
@@ -25,11 +33,10 @@ const WorkDetails = () => {
       <section className="breadcrumb_area">
         <div className="container">
           <div className="breadcrumb_content" data-aos="fade-up">
-            <p>BRANDING - RAVEN STUDIO</p>
+            <p>{selectedWork.name}</p>
             <h1 className="section_heading">
               <img src={Star} alt="star" />
-              Aesthetic design for brand <br />
-              new startup
+              {selectedWork.description}
               <img src={Star} alt="star" />
             </h1>
           </div>

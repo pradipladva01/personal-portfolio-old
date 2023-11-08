@@ -37,7 +37,8 @@ const Routes = () => {
       element: <Service />,
     },
     {
-      path: "/work-details",
+      path: "/work-details/:id",
+      component: WorkDetails,
       element: <WorkDetails />,
     },
     {

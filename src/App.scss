@@ -32,13 +32,15 @@ img {
   z-index: 2;
   position: relative;
 }
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap');
 
 html {
   overflow-x: hidden !important;
 }
 
 body {
-  font-family: 'Unbounded', cursive;
+  // font-family: 'Unbounded', cursive;
+  font-family: 'Jost', sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: var(--white-color);

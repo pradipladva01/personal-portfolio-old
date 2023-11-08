@@ -92,11 +92,11 @@ const Home = () => {
                     <p>Years <br />Experience</p>
                   </div>
                   <div className="client_item">
-                    <h1>+10</h1>
+                    <h1>+07</h1>
                     <p>CLIENTS <br />WORLDWIDE</p>
                   </div>
                   <div className="client_item">
-                    <h1>+23</h1>
+                    <h1>+15</h1>
                     <p>TOTAL <br />PROJECTS</p>
                   </div>
                 </div>
