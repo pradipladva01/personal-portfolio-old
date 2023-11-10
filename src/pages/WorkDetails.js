@@ -22,14 +22,18 @@ const WorkDetails = () => {
   const selectedWork = WorkData.find((work) => work.id === parseInt(id));
 
   if (!selectedWork) {
-    return <div>Work not found.</div>;
+    return <div style={{
+      display: "flex",
+      alignItems: "center",
+      height: "100vh",
+      justifyContent: "center",
+    }}>Work not found.</div>;
   }
   return (
     <>
       <Helmet>
         <title>Work Detail | Personal Portfolio</title>
       </Helmet>
-      <Navbar />
       <section className="breadcrumb_area">
         <div className="container">
           <div className="breadcrumb_content" data-aos="fade-up">
@@ -87,7 +91,7 @@ const WorkDetails = () => {
               </div>
             </div>
           </div>
-          <div className="live_link">
+          <div className="live_link" data-aos="fade-up">
             <Link>
               Live Demo - Click to Watch
               <img src={linkArrow} alt="" />

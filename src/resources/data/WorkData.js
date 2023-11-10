@@ -9,7 +9,7 @@ const WorkData = [
     description: "Description of Project A",
   },
   {
-    id: 2,
+    id: "greenup",
     image: project2,
     name: "Project B",
     description: "Description of Project B",

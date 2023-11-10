@@ -16,7 +16,6 @@ const Works = () => {
       <Helmet>
         <title>Work | Personal Portfolio</title>
       </Helmet>
-      <Navbar />
       <section className="project_area">
         <div className="container">
           <h1 className="section_heading" data-aos="fade-up">

@@ -22,7 +22,6 @@ const MoreAboutMe = () => {
                     About | Personal Portfolio
                 </title>
             </Helmet>
-            <Navbar />
             <section className="about_area">
                 <div className="container">
                     <div className='d-flex about_me_wrap align-items-end mb-30'>

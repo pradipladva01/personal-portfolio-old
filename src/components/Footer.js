@@ -3,14 +3,17 @@ import Logo from "../resources/images/PradipLogo.svg";
 import { Link, NavLink } from "react-router-dom";
 import "../styles/Footer.css";
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <section className="footer_area">
       <div className="container">
-        <div className="row">
+        <div className="row justify-content-center">
           <Link to="/" className="footer_logo">
-          {/* Pradip Ladva */}
-            <img src={Logo} alt="" />
+            <div className="p">P</div>
+            <div className="info_wrapper">
+              <div className="name">Pradip Ladva</div>
+              <div className="title">Frontend Developer</div>
+            </div>
           </Link>
           <ul className="footer_menu">
             <li className="menu_item">

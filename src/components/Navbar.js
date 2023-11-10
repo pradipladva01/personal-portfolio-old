@@ -4,12 +4,14 @@ import Logo from "../resources/images/PradipLogo.svg";
 import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [isMenuActive, setIsMenuActive] = useState(false);
 
   const handleMenuClick = () => {
     setIsMenuActive((prevState) => !prevState);
   };
+  const { nameActive } = props;
+  const { pActive } = props;
   return (
     <>
       <nav className="header_area">
@@ -17,7 +19,13 @@ const Navbar = () => {
           <div className="gx-row d-flex align-items-center justify-content-between">
             <NavLink to="/" className="logo">
               {/* Pradip Ladva */}
-              <img src={Logo} alt="Logo" />
+              <div className={`p ${pActive ? "p_active" : ""}`}>P</div>
+              <div
+                className={`info_wrapper ${nameActive ? "name_active" : ""}`}
+              >
+                <div className="name">Pradip Ladva</div>
+                <div className="title">Frontend Developer</div>
+              </div>
             </NavLink>
             <nav className={`navbar ${isMenuActive ? "active" : ""}`}>
               <ul className="menu">

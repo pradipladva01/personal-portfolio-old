@@ -1,16 +1,64 @@
 .header_area {
-    margin-top: 10px;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(10px);
 
     .logo {
-        display: inline-block;
-        z-index: 16;
-        font-size: 24px;
-        color: var(--white-color);
-        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        width: max-content;
+        height: max-content;
+        position: relative;
+        color: #e5e5e5;
+        transition: .1s ease;
+        z-index: 351;
+        cursor: pointer;
         text-decoration: none;
+        overflow: hidden;
 
-        img {
-            width: 110px;
+        .p {
+            font-size: 24px;
+            font-weight: 600;
+            border-radius: 50%;
+            height: 45px;
+            width: 45px;
+            border: 2px solid #e5e5e5;
+            display: grid;
+            place-items: center;
+            margin-top: auto;
+            background-color: var(--body-color);
+            z-index: 1;
+
+        }
+        .p_active {
+            background-color: transparent;
+        }
+
+        .info_wrapper {
+            display: flex;
+            flex-direction: column;
+            margin-top: auto;
+            transition: .2s ease;
+
+            &.name_active {
+                transform: translateX(-200px);
+                transition: .2s ease;
+            }
+
+            .name {
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: auto;
+            }
+
+            .title {
+                margin-top: auto;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: 0.5px;
+            }
         }
     }
 
@@ -56,8 +104,8 @@
         color: #fff;
         font-size: 25px;
         cursor: pointer;
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
         border: 1px solid hsla(0, 0%, 100%, .40);
         justify-content: center;
         align-items: center;
@@ -123,7 +171,7 @@
             visibility: hidden;
             will-change: transform;
             transform: translate3d(0px, -300px, 0px) scale(1, 1) scale(1, 0.945615);
-            transform: translate3d(0px, -300px, 0px) scale(1, 0.5) scale(1, 0.5);
+            // transform: translate3d(0px, -300px, 0px) scale(1, 0.5) scale(1, 0.5);
             transition: .5s;
 
             .theme_btn {
@@ -164,6 +212,7 @@
         }
     }
 }
+
 @media (max-width:480px) {
     .header_area .logo img {
         width: 100px;

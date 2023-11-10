@@ -40,13 +40,14 @@
 }
 
 .breadcrumb_area {
-    padding-top: 80px;
+    padding-top: 150px;
 
     .breadcrumb_content {
         p {
             color: var(--text-color);
             opacity: 0.7;
-            margin-bottom: 30px;
+            font-size: 18px;
+            margin-bottom: 20px;
         }
 
         .section_heading {
@@ -143,11 +144,12 @@
 
     .live_link {
         margin: 50px 0;
+        text-align: center;
 
         a {
             text-decoration: none;
-            color: white;
-            display: flex;
+            color: #ffffff;
+            display: inline-block;
             align-items: center;
             column-gap: 10px;
             overflow: hidden;
@@ -299,7 +301,7 @@
     }
 
     .project_details_wrap .project_details_3_img {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .project_details_wrap .big_btn {

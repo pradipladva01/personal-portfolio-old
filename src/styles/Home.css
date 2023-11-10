@@ -46,7 +46,7 @@
 }
 
 .about_area {
-  padding-top: 80px;
+  padding-top: 150px;
 }
 .about_area .about_me_box {
   position: relative;
@@ -493,6 +493,9 @@ a:hover {
   .about_area .inner_profile_icons {
     gap: 50px;
     flex-wrap: wrap;
+  }
+  .about_area .about_me_box .infos p {
+    width: 80%;
   }
 }
 @media (max-width: 428px) {

@@ -58,7 +58,6 @@ const Contact = () => {
       <Helmet>
         <title>Contact | Personal Portfolio</title>
       </Helmet>
-      <Navbar />
       <section className="contact_area">
         <div className="container">
           <div className="row d-flex justify-content-between">

@@ -23,7 +23,6 @@ const Service = () => {
                     Service | Personal Portfolio
                 </title>
             </Helmet>
-            <Navbar />
             <section className="service_area">
                 <div className="container">
                     <h1 className='section_heading'>
