@@ -48,6 +48,7 @@ const WorkDetails = () => {
       <section className="project_details_wrap">
         <div className="project_details_img" data-aos="zoom-in">
           <img src={projectData.bannerImage} alt="project1" />
+          <img src={projectData.image} alt="project1" className="main-img"/>
           <div className="live_link" data-aos="fade-up">
             <Link to={projectData.liveLink}>
               Click to Watch

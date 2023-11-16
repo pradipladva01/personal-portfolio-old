@@ -54,7 +54,6 @@
 }
 
 .project_details_wrap .project_details_img {
-  height: 550px;
   position: relative;
   margin-bottom: 50px;
 }
@@ -64,6 +63,10 @@
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+}
+.project_details_wrap .project_details_img .main-img {
+  display: none;
+  width: 100%;
 }
 .project_details_wrap .project_details_img .live_link {
   text-align: center;
@@ -152,7 +155,6 @@
   margin: 0;
 }
 .project_details_wrap .project_details_2_img {
-  height: 400px;
   border-radius: 30px;
 }
 .project_details_wrap .project_details_2_img img {
@@ -164,7 +166,6 @@
   border-radius: 30px;
 }
 .project_details_wrap .project_details_3_img {
-  height: 480px;
   position: relative;
   border-radius: 30px;
   margin-bottom: 30px;
@@ -255,13 +256,6 @@
   .breadcrumb_area .breadcrumb_content .section_heading {
     font-size: 36px;
   }
-  .project_details_wrap .project_details_img {
-    height: 300px;
-  }
-  .project_details_wrap .project_details_3_img,
-  .project_details_wrap .project_details_2_img {
-    height: 250px;
-  }
 }
 @media (max-width: 585px) {
   .breadcrumb_area .breadcrumb_content .section_heading {
@@ -274,8 +268,14 @@
     margin-top: 20px;
   }
   .project_details_wrap .project_details_img img {
-    -o-object-position: -450px;
-       object-position: -450px;
+    display: none;
+  }
+  .project_details_wrap .project_details_img .main-img {
+    display: block;
+  }
+  .project_details_wrap .project_details_3_img,
+  .project_details_wrap .project_details_2_img {
+    height: auto;
   }
 }
 @media (max-width: 428px) {
@@ -301,10 +301,6 @@
   }
 }
 @media (max-width: 360px) {
-  .project_details_wrap .project_details_img img {
-    -o-object-position: -380px;
-       object-position: -380px;
-  }
   .project_details_wrap .project_details_img {
     height: 250px;
   }
@@ -315,9 +311,5 @@
 @media (max-width: 320px) {
   .breadcrumb_area .breadcrumb_content .section_heading {
     font-size: 22px;
-  }
-  .project_details_wrap .project_details_img img {
-    -o-object-position: -410px;
-       object-position: -410px;
   }
 }/*# sourceMappingURL=WorkDetails.css.map */
