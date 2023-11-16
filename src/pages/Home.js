@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import textureImg from "../resources/images/background_texture.png";
 import Pradip from "../resources/images/pradip.png";
 import nextIcon from "../resources/images/Next_icon.svg";
 import starIcon from "../resources/images/star1.svg";
 import "../styles/Home.css";
-import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
 import { Link } from "react-router-dom";
 import AboutMe from "../components/AboutMe";
@@ -15,28 +14,10 @@ import Footer from "../components/Footer";
 import { Helmet } from "react-helmet-async";
 
 const Home = () => {
-  // const [nameActive, setNameActive] = useState(false);
-  // const [pActive, setPActive] = useState(false);
-
-  // useEffect((_) => {
-  //   const handleScroll = (_) => {
-  //     if (window.pageYOffset > 10) {
-  //       setNameActive(true);
-  //       setPActive(true);
-  //     } else {
-  //       setNameActive(false);
-  //       setPActive(false);
-  //     }
-  //   };
-  //   window.addEventListener("scroll", handleScroll, false);
-  //   return (_) => {
-  //     window.addEventListener("scroll", handleScroll, false);
-  //   };
-  // }, []);
   return (
     <>
       <Helmet>
-        <title>Pradip | Personal Portfolio</title>
+        <title>Pradip | {process.env.REACT_APP_APP_NAME}</title>
       </Helmet>
       
       <section className="about_area">
@@ -52,7 +33,7 @@ const Home = () => {
                 <div className="infos">
                   <h4>A FRONTEND DEVELOPER</h4>
                   <h1>Pradip Ladva.</h1>
-                  <p>I am a Frontend Developer based in Surat.</p>
+                  <p>Front-end Developer based in Surat, INDIA</p>
                   <Link href="#" className="about_btn">
                     <img src={nextIcon} alt="Button" />
                   </Link>

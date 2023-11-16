@@ -20,7 +20,7 @@ const Service = () => {
         <>
             <Helmet>
                 <title>
-                    Service | Personal Portfolio
+                    Service | {process.env.REACT_APP_APP_NAME}
                 </title>
             </Helmet>
             <section className="service_area">

@@ -19,7 +19,7 @@ const MoreAboutMe = () => {
         <>
             <Helmet>
                 <title>
-                    About | Personal Portfolio
+                    About | {process.env.REACT_APP_APP_NAME}
                 </title>
             </Helmet>
             <section className="about_area">

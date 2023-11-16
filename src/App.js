@@ -6,11 +6,10 @@ import "aos/dist/aos.css";
 import "./App.css";
 import ScrollToTop from "./components/ScrollToTop";
 import Loading from "./components/Loading";
-// import Cursor from "./components/Cursor";
 import { Analytics } from "@vercel/analytics/react";
-import Router from "./Routes";
 import { SnackbarProvider } from "notistack";
 import Navbar from "./components/Navbar";
+import Routes from "./Routes";
 
 const App = () => {
   const [nameActive, setNameActive] = useState(false);
@@ -40,7 +39,7 @@ const App = () => {
       <SnackbarProvider maxSnack={3}>
         <Suspense fallback={<Loading />}>
           <Navbar nameActive={nameActive} pActive={pActive} />
-          <Router />
+          <Routes />
         </Suspense>
       </SnackbarProvider>
       <Analytics />

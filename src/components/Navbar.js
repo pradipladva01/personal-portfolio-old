@@ -18,7 +18,6 @@ const Navbar = (props) => {
         <div className="container">
           <div className="gx-row d-flex align-items-center justify-content-between">
             <NavLink to="/" className="logo">
-              {/* Pradip Ladva */}
               <div className={`p ${pActive ? "p_active" : ""}`}>P</div>
               <div
                 className={`info_wrapper ${nameActive ? "name_active" : ""}`}
@@ -30,16 +29,24 @@ const Navbar = (props) => {
             <nav className={`navbar ${isMenuActive ? "active" : ""}`}>
               <ul className="menu">
                 <li>
-                  <NavLink to="/">Home</NavLink>
+                  <NavLink to="/" onClick={handleMenuClick}>
+                    Home
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/about">About</NavLink>
+                  <NavLink to="/about" onClick={handleMenuClick}>
+                    About
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/works">Works</NavLink>
+                  <NavLink to="/works" onClick={handleMenuClick}>
+                    Works
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/contact">Contact</NavLink>
+                  <NavLink to="/contact" onClick={handleMenuClick}>
+                    Contact
+                  </NavLink>
                 </li>
               </ul>
               <NavLink to="/contact" className="theme_btn">

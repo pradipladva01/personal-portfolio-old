@@ -6,7 +6,6 @@ import mail from "../resources/images/mail.svg";
 import Loacte from "../resources/images/pin-alt.svg";
 import textureImg from "../resources/images/background_texture.png";
 import StarIcon from "../resources/images/star-icon.png";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../styles/contact.css";
 import { Link } from "react-router-dom";
@@ -56,7 +55,7 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact | Personal Portfolio</title>
+        <title>Contact | {process.env.REACT_APP_APP_NAME}</title>
       </Helmet>
       <section className="contact_area">
         <div className="container">
