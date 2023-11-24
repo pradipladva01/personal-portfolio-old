@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 import "../styles/WorkDetails.css";
 import { Helmet } from "react-helmet-async";
 import { Link, useParams } from "react-router-dom";
-import WorkData from "../resources/data/WorkData";
+import WorkData from "./data/WorkData";
 
 const WorkDetails = () => {
   const { id } = useParams();
@@ -48,7 +48,7 @@ const WorkDetails = () => {
       <section className="project_details_wrap">
         <div className="project_details_img" data-aos="zoom-in">
           <img src={projectData.bannerImage} alt="project1" />
-          <img src={projectData.image} alt="project1" className="main-img"/>
+          <img src={projectData.image} alt="project1" className="main-img" />
           <div className="live_link" data-aos="fade-up">
             <Link to={projectData.liveLink}>
               Click to Watch

@@ -6,7 +6,7 @@ import "../styles/Works.css";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet-async";
-import WorkData from "../resources/data/WorkData";
+import WorkData from "./data/WorkData";
 
 const Works = () => {
   return (
