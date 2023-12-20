@@ -62,7 +62,7 @@
   z-index: 0;
 }
 .about_area .about_me_wrap .about_image_box .image_inner {
-  border-radius: 30px;
+  border-radius: 22px;
   position: relative;
   z-index: 1;
 }
@@ -72,7 +72,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
-  border-radius: 30px;
+  border-radius: 22px;
 }
 .about_area .about_me_wrap .about_details {
   flex: 1;

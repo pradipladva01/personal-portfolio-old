@@ -10,9 +10,9 @@ import { Link, useParams } from "react-router-dom";
 import WorkData from "./data/WorkData";
 
 const WorkDetails = () => {
-  const { id } = useParams();
+  const { slug } = useParams();
 
-  const projectData = WorkData.find((work) => work.id === String(id));
+  const projectData = WorkData.find((work) => work.slug === String(slug));
 
   if (!projectData) {
     return (
@@ -39,7 +39,7 @@ const WorkDetails = () => {
             <p>{projectData.name}</p>
             <h1 className="section_heading">
               <img src={Star} alt="star" />
-              {projectData.description}
+              {projectData.title}
               <img src={Star} alt="star" />
             </h1>
           </div>
@@ -50,10 +50,12 @@ const WorkDetails = () => {
           <img src={projectData.bannerImage} alt="project1" />
           <img src={projectData.image} alt="project1" className="main-img" />
           <div className="live_link" data-aos="fade-up">
-            <Link to={projectData.liveLink}>
-              Click to Watch
-              <img src={linkArrow} alt="" className="linkArrow" />
-            </Link>
+            {projectData.liveLink && (
+              <Link to={projectData.liveLink}>
+                Click to Watch
+                <img src={linkArrow} alt="" className="linkArrow" />
+              </Link>
+            )}
           </div>
         </div>
         <div className="container">
@@ -109,7 +111,14 @@ const WorkDetails = () => {
           className="container d-flex align-items-center justify-content-center"
           data-aos="zoom-in"
         >
-          <button className="big_btn shadow_box">Next Project</button>
+          {projectData.nextProject && (
+            <button
+              className="big_btn shadow_box"
+              onClick={() => (window.location.href = projectData.nextProject)}
+            >
+              Next Project
+            </button>
+          )}
         </div>
       </section>
       <Footer />

@@ -11,12 +11,14 @@ const WorkData = [
     image: uniqual,
     bannerImage: uniqualBanner,
     name: "Uniqual ITech",
-    description: "UniQual iTech | The Powerhouse That Delivers High Quality IT",
-    liveLink: 'https://uniqualitech.com/',
+    title: "UniQual iTech | The Powerhouse That Delivers High Quality IT",
+    slug: "uniqual-itech-the-powerhouse-that-delivers-high-quality-it",
+    liveLink: "https://uniqualitech.com/",
     image1: uniqualPhoto1,
     image2: uniqualPhoto2,
     image3: uniqualPhoto3,
     image4: uniqualPhoto4,
+    nextProject: null,
   },
 ];
 export default WorkData;

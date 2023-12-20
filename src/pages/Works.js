@@ -26,12 +26,12 @@ const Works = () => {
               <div
                 className="col-lg-4 col-md-6 col-sm-6"
                 data-aos="zoom-in"
-                key={work.id}
+                key={work.slug}
               >
                 <div className="project_item shadow_box">
                   <Link
                     className="overlay_link"
-                    to={`/work-details/${work.id}`}
+                    to={`/work-details/${work.slug}`}
                   ></Link>
                   <img src={textureImg} alt="" className="bg_img" />
                   <div className="project_img">
@@ -42,7 +42,7 @@ const Works = () => {
                       <h1>{work.name}</h1>
                     </div>
                     <Link
-                      to={`/work-details/${work.id}`}
+                      to={`/work-details/${work.slug}`}
                       className="project_btn"
                     >
                       <img src={nextIcon} alt="Button" />

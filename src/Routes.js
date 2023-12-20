@@ -42,7 +42,7 @@ const Routes = () => {
       element: <Service />,
     },
     {
-      path: "/work-details/:id",
+      path: "/work-details/:slug",
       component: WorkDetails,
       element: <WorkDetails />,
     },
