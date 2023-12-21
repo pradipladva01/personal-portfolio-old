@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Navbar from "../components/Navbar";
 import Pradip from "../resources/images/pradip.png";
 import textureImg from "../resources/images/background_texture.png";

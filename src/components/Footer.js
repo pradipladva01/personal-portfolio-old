@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "../resources/images/PradipLogo.svg";
 import { Link, NavLink } from "react-router-dom";
 import "../styles/Footer.css";
 

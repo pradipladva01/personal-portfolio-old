@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import textureImg from "../resources/images/background_texture.png";
-import Logo from "../resources/images/PradipLogo.svg";
 import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
 

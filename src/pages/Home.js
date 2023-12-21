@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import textureImg from "../resources/images/background_texture.png";
 import Pradip from "../resources/images/pradip.png";
 import nextIcon from "../resources/images/Next_icon.svg";
