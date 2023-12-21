@@ -8,6 +8,7 @@ import "../styles/WorkDetails.css";
 import { Helmet } from "react-helmet-async";
 import { Link, useParams } from "react-router-dom";
 import WorkData from "./data/WorkData";
+import Navbar from "../components/Navbar";
 
 const WorkDetails = () => {
   const { slug } = useParams();
@@ -33,6 +34,7 @@ const WorkDetails = () => {
       <Helmet>
         <title>Work Detail | {process.env.REACT_APP_APP_NAME}</title>
       </Helmet>
+      <Navbar/>
       <section className="breadcrumb_area">
         <div className="container">
           <div className="breadcrumb_content" data-aos="fade-up">

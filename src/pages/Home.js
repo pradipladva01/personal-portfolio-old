@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import textureImg from "../resources/images/background_texture.png";
 import Pradip from "../resources/images/pradip.png";
 import nextIcon from "../resources/images/Next_icon.svg";
@@ -12,6 +12,7 @@ import Profile from "../components/Profile";
 import WorkTogether from "../components/WorkTogether";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet-async";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
@@ -19,7 +20,7 @@ const Home = () => {
       <Helmet>
         <title>Pradip | {process.env.REACT_APP_APP_NAME}</title>
       </Helmet>
-      
+      <Navbar/>
       <section className="about_area">
         <div className="container">
           <div className="row">

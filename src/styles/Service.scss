@@ -53,7 +53,7 @@
 }
 
 .service_area {
-    padding-top: 150px;
+    padding-top: 80px;
 
     .container>.section_heading {
         display: none;
@@ -420,10 +420,16 @@
     .service_area .col-sm-6 .section_heading {
         display: none;
     }
+
     .section_heading {
         font-size: 26px;
         justify-content: center;
         margin-bottom: 30px;
+    }
+}
+@media (max-width:480px) {
+    .service_area{
+        padding-top: 50px;
     }
 }
 

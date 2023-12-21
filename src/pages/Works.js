@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet-async";
 import WorkData from "./data/WorkData";
+import Navbar from "../components/Navbar";
 
 const Works = () => {
   return (
@@ -14,6 +15,7 @@ const Works = () => {
       <Helmet>
         <title>Work | {process.env.REACT_APP_APP_NAME}</title>
       </Helmet>
+      <Navbar/>
       <section className="project_area">
         <div className="container">
           <h1 className="section_heading" data-aos="fade-up">

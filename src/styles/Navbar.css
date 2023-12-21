@@ -1,10 +1,3 @@
-.header_area {
-  z-index: 10;
-  position: fixed;
-  width: 100%;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-}
 .header_area .logo {
   display: flex;
   align-items: center;
@@ -21,42 +14,8 @@
   text-decoration: none;
   overflow: hidden;
 }
-.header_area .logo .p {
-  font-size: 24px;
-  font-weight: 600;
-  border-radius: 50%;
-  height: 45px;
-  width: 45px;
-  border: 2px solid #e5e5e5;
-  display: grid;
-  place-items: center;
-  margin-top: auto;
-  background-color: var(--body-color);
-  z-index: 1;
-}
-.header_area .logo .p_active {
-  background-color: transparent;
-}
-.header_area .logo .info_wrapper {
-  display: flex;
-  flex-direction: column;
-  margin-top: auto;
-  transition: 0.2s ease;
-}
-.header_area .logo .info_wrapper.name_active {
-  transform: translateX(-200px);
-  transition: 0.2s ease;
-}
-.header_area .logo .info_wrapper .name {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: auto;
-}
-.header_area .logo .info_wrapper .title {
-  margin-top: auto;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+.header_area .logo h3 {
+  margin: 0;
 }
 .header_area .navbar {
   margin: 0;
@@ -92,9 +51,6 @@
   color: #fff;
   font-size: 25px;
   cursor: pointer;
-  width: 45px;
-  height: 45px;
-  border: 1px solid hsla(0, 0%, 100%, 0.4);
   justify-content: center;
   align-items: center;
   flex-direction: column;

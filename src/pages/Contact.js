@@ -14,6 +14,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import useWeb3Forms from "@web3forms/react";
 import { useForm } from "react-hook-form";
+import Navbar from "../components/Navbar";
 
 const Contact = () => {
   const {
@@ -57,6 +58,7 @@ const Contact = () => {
       <Helmet>
         <title>Contact | {process.env.REACT_APP_APP_NAME}</title>
       </Helmet>
+      <Navbar/>
       <section className="contact_area">
         <div className="container">
           <div className="row d-flex justify-content-between">

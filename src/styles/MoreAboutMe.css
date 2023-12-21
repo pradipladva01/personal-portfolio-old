@@ -38,7 +38,7 @@
 }
 
 .about_area {
-  padding-top: 150px;
+  padding-top: 80px;
 }
 .about_area .about_me_wrap {
   gap: 24px;
@@ -214,6 +214,11 @@
   }
   .about_area .about_edc_exp ul li h2 {
     line-height: 24px;
+  }
+}
+@media (max-width: 480px) {
+  .about_area {
+    padding-top: 50px;
   }
 }
 @media (max-width: 360px) {

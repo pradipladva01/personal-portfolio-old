@@ -40,7 +40,7 @@
 }
 
 .about_area {
-    padding-top: 150px;
+    padding-top: 80px;
 
     .about_me_wrap {
         gap: 24px;
@@ -202,7 +202,8 @@
         width: 72px;
         height: 72px;
     }
-    .about_area .about_contact_box h1{
+
+    .about_area .about_contact_box h1 {
         font-size: 36px;
         line-height: 50xz;
     }
@@ -251,6 +252,11 @@
 
     .about_area .about_edc_exp ul li h2 {
         line-height: 24px;
+    }
+}
+@media (max-width:480px) {
+    .about_area{
+        padding-top: 50px;
     }
 }
 @media (max-width:360px) {

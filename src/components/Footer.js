@@ -9,11 +9,7 @@ const Footer = (props) => {
       <div className="container">
         <div className="row justify-content-center">
           <Link to="/" className="footer_logo">
-            <div className="p">P</div>
-            <div className="info_wrapper">
-              <div className="name">Pradip Ladva</div>
-              <div className="title">Frontend Developer</div>
-            </div>
+            <h3>Pradip.</h3>
           </Link>
           <ul className="footer_menu">
             <li className="menu_item">

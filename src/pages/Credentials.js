@@ -13,6 +13,7 @@ const Credentials = () => {
       <Helmet>
         <title>About | {process.env.REACT_APP_APP_NAME}</title>
       </Helmet>
+      <Navbar/>
       <section className="credential_area">
         <div className="container">
           <div className="gx-row d-flex">

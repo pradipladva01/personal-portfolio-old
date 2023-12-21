@@ -23,6 +23,7 @@ const Service = () => {
                     Service | {process.env.REACT_APP_APP_NAME}
                 </title>
             </Helmet>
+            <Navbar/>
             <section className="service_area">
                 <div className="container">
                     <h1 className='section_heading'>

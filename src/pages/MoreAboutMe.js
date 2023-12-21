@@ -22,6 +22,7 @@ const MoreAboutMe = () => {
                     About | {process.env.REACT_APP_APP_NAME}
                 </title>
             </Helmet>
+            <Navbar/>
             <section className="about_area">
                 <div className="container">
                     <div className='d-flex about_me_wrap align-items-end mb-30'>

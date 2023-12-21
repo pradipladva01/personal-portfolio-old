@@ -10,21 +10,13 @@ const Navbar = (props) => {
   const handleMenuClick = () => {
     setIsMenuActive((prevState) => !prevState);
   };
-  const { nameActive } = props;
-  const { pActive } = props;
   return (
     <>
       <nav className="header_area">
         <div className="container">
           <div className="gx-row d-flex align-items-center justify-content-between">
             <NavLink to="/" className="logo">
-              <div className={`p ${pActive ? "p_active" : ""}`}>P</div>
-              <div
-                className={`info_wrapper ${nameActive ? "name_active" : ""}`}
-              >
-                <div className="name">Pradip Ladva</div>
-                <div className="title">Frontend Developer</div>
-              </div>
+              <h3>Pradip.</h3>
             </NavLink>
             <nav className={`navbar ${isMenuActive ? "active" : ""}`}>
               <ul className="menu">
