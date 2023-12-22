@@ -1,4 +1,6 @@
 .header_area {
+    padding: 10px 0;
+
     .logo {
         display: flex;
         align-items: center;
@@ -15,6 +17,10 @@
 
         h3 {
             margin: 0;
+        }
+
+        img {
+            width: 40px;
         }
     }
 
@@ -163,11 +169,5 @@
                 display: none;
             }
         }
-    }
-}
-
-@media (max-width:480px) {
-    .header_area .logo img {
-        width: 100px;
     }
 }

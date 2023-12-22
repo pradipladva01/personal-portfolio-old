@@ -21,6 +21,9 @@
 .footer_area .footer_logo h3 {
   margin: 0;
 }
+.footer_area .footer_logo img {
+  width: 40px;
+}
 .footer_area .footer_menu {
   margin: 33px 0 37px 0;
   padding: 0;
@@ -61,8 +64,5 @@
 @media (max-width: 428px) {
   .footer_area .footer_menu {
     gap: 20px;
-  }
-  .footer_area .footer_logo img {
-    width: 100px;
   }
 }/*# sourceMappingURL=Footer.css.map */

@@ -1,3 +1,6 @@
+.header_area {
+  padding: 10px 0;
+}
 .header_area .logo {
   display: flex;
   align-items: center;
@@ -16,6 +19,9 @@
 }
 .header_area .logo h3 {
   margin: 0;
+}
+.header_area .logo img {
+  width: 40px;
 }
 .header_area .navbar {
   margin: 0;
@@ -128,10 +134,5 @@
   }
   .header_area .gx-row .theme_btn {
     display: none;
-  }
-}
-@media (max-width: 480px) {
-  .header_area .logo img {
-    width: 100px;
   }
 }/*# sourceMappingURL=Navbar.css.map */

@@ -19,6 +19,9 @@
         h3 {
             margin: 0;
         }
+        img{
+            width: 40px;
+        }
     }
 
     .footer_menu {
@@ -70,9 +73,5 @@
 
     .footer_area .footer_menu {
         gap: 20px;
-    }
-
-    .footer_area .footer_logo img {
-        width: 100px;
     }
 }

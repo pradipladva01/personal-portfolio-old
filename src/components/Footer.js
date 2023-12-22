@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../resources/images/logo.svg";
 import { Link, NavLink } from "react-router-dom";
 import "../styles/Footer.css";
 
@@ -8,7 +9,8 @@ const Footer = (props) => {
       <div className="container">
         <div className="row justify-content-center">
           <Link to="/" className="footer_logo">
-            <h3>Pradip.</h3>
+            {/* <h3>Pradip.</h3> */}
+            <img src={logo} alt="" />
           </Link>
           <ul className="footer_menu">
             <li className="menu_item">
