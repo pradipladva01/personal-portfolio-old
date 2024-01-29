@@ -28,12 +28,12 @@ const Contact = () => {
   const [isSuccess, setIsSuccess] = useState(false);
   const [message, setMessage] = useState(false);
 
-  const apiKey = "8761a2b9-98e5-4aec-a04a-dc24b786ada4";
+  const apiKey = "YOUR_API_KEY";
   const { submit: onSubmit } = useWeb3Forms({
     access_key: apiKey,
     settings: {
-      from_name: "Pradip Ladva",
-      subject: "New Contact Message from your pradip ladva",
+      from_name: "Lorem Lorem",
+      subject: "New Contact Message from your ",
     },
     onSuccess: (msg, data) => {
       setIsSuccess(true);
@@ -58,7 +58,7 @@ const Contact = () => {
       <Helmet>
         <title>Contact | {process.env.REACT_APP_APP_NAME}</title>
       </Helmet>
-      <Navbar/>
+      <Navbar />
       <section className="contact_area">
         <div className="container">
           <div className="row d-flex justify-content-between">
@@ -71,9 +71,7 @@ const Contact = () => {
                   </div>
                   <div className="right">
                     <span>MAIL us</span>
-                    <Link to="mailto:pradipladva02@gmail.com">
-                      pradipladva02@gmail.com
-                    </Link>
+                    <Link to="mailto:Lorem, ipsum.">Lorem, ipsum.</Link>
                   </div>
                 </li>
                 <li className="d-flex align-items-center" data-aos="zoom-in">
@@ -82,7 +80,12 @@ const Contact = () => {
                   </div>
                   <div className="right">
                     <span>Contact Us</span>
-                    <Link to="tel: 8980108806">+91 8980108806</Link>
+                    <Link
+                      to="tel: lorem1
+                    "
+                    >
+                      +91 lorem1
+                    </Link>
                   </div>
                 </li>
                 <li className="d-flex align-items-center" data-aos="zoom-in">
@@ -231,8 +234,6 @@ const Contact = () => {
                       name="email"
                       id="email"
                       placeholder="Email *"
-                      // value={formik.values.email}
-                      // onChange={formik.handleChange}
                       {...register("email", {
                         required: "Enter your email",
                         pattern: {
@@ -241,11 +242,6 @@ const Contact = () => {
                         },
                       })}
                     />
-                    {/* {formik.touched.email && Boolean(formik.errors.email) && (
-                      <p className="error">
-                        {formik.touched.email && formik.errors.email}
-                      </p>
-                    )} */}
                     {errors.email && (
                       <div className="mt-1 error">
                         <small>{errors.email.message}</small>

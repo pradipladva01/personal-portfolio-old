@@ -40,8 +40,8 @@ const MoreAboutMe = () => {
                             </h1>
                             <div className='about_details_inner shadow_box'>
                                 <img src={StarIcon} alt="bg" className='star_icon' />
-                                <h1>Pradip Ladva</h1>
-                                <p>I'm Pradip Ladva, a passionate front end developer with 2 years of hands-on experience. I thrive on crafting captivating user interfaces and delivering seamless web experiences.</p>
+                                <h1>Lorem, ipsum.</h1>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis itaque repudiandae minima quas odit et eligendi recusandae temporibus veritatis exercitationem.</p>
                             </div>
                         </div>
                     </div>

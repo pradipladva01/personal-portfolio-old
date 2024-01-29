@@ -46,10 +46,10 @@ const Routes = () => {
       component: WorkDetails,
       element: <WorkDetails />,
     },
-    {
-      path: "/*",
-      element: <Navigate replace to="/404" />,
-    },
+      {
+        path: "/*",
+        element: <Navigate replace to="/404" />,
+      },
     {
       path: "/404",
       element: <FourOhFour />,

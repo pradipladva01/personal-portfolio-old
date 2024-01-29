@@ -32,9 +32,9 @@ const Home = () => {
                   <img src={Pradip} alt="" />
                 </div>
                 <div className="infos">
-                  <h4>A FRONTEND DEVELOPER</h4>
-                  <h1>Pradip Ladva.</h1>
-                  <p>Front-end Developer based in Surat, INDIA</p>
+                  <h4>Lorem, ipsum dolor.</h4>
+                  <h1>Lorem, ipsum..</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
                   <Link href="#" className="about_btn">
                     <img src={nextIcon} alt="Button" />
                   </Link>
@@ -48,23 +48,23 @@ const Home = () => {
                     <div className="marquee">
                       <div>
                         <span>
-                          DESIGN <b>CODE</b> INSPRITION
+                          your word <b>WORDS</b> your word
                           <img decoding="async" src={starIcon} alt="Star" />
                         </span>
                         <span>
-                          DESIGN <b>CODE</b> INSPRITION
+                          your word <b>WORDS</b> your word
                           <img decoding="async" src={starIcon} alt="Star" />
                         </span>
                         <span>
-                          DESIGN <b>CODE</b> INSPRITION
+                          your word <b>WORDS</b> your word
                           <img decoding="async" src={starIcon} alt="Star" />
                         </span>
                         <span>
-                          DESIGN <b>CODE</b> INSPRITION
+                          your word <b>WORDS</b> your word
                           <img decoding="async" src={starIcon} alt="Star" />
                         </span>
                         <span>
-                          DESIGN <b>CODE</b> INSPRITION
+                          your word <b>WORDS</b> your word
                           <img decoding="async" src={starIcon} alt="Star" />
                         </span>
                       </div>
