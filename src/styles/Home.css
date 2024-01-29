@@ -353,12 +353,7 @@
   font-weight: 700;
   color: black;
   margin: 0;
-  margin-bottom: -40px;
   text-shadow: 2px 2px #fff, -2px 2px #fff, 2px -2px #fff, -2px -2px #fff, 2px 2px 5px #555;
-}
-.fourohfour_section h1 span {
-  transform: rotate(270deg);
-  display: inline-block;
 }
 .fourohfour_section h6 {
   font-size: 160px;

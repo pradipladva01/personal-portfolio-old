@@ -7,11 +7,10 @@ const FourOhFour = () => {
     <>
       <div className="fourohfour_section">
         <h1>
-          40<span>4</span>
+          404
         </h1>
-        <h6>Sorry...</h6>
-        <p>Uh-Oh, You've Strayed Off the Path</p>
-        <Link className="theme_btn" to="/">Find Your Way Back</Link>
+        <p>page not found</p>
+        <Link className="theme_btn" to="/">HOME</Link>
       </div>
     </>
   );
